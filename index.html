@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Wout Verheyen</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
-<body>
+<body class="home-page">
 
 <nav class="navbar">
     <div class="nav-left">
@@ -18,56 +22,112 @@
     </div>
     <button class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation">☰</button>
     <div class="nav-links" id="primary-navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="active"><i class="bi bi-house-door" style="margin-right: 0.3rem;"></i>Home</a>
+        <a href="about.html"><i class="bi bi-person" style="margin-right: 0.3rem;"></i>About</a>
+        <a href="projects.html"><i class="bi bi-code-slash" style="margin-right: 0.3rem;"></i>Projects</a>
+        <a href="cv.html"><i class="bi bi-file-earmark-text" style="margin-right: 0.3rem;"></i>CV</a>
+        <a href="contact.html"><i class="bi bi-envelope" style="margin-right: 0.3rem;"></i>Contact</a>
     </div>
 </nav>
 
 <main class="container">
-    <div class="card">
-        <h1>Hallo en welkom</h1>
-        <p>
-            Mijn naam is Wout Verheyen en ik ben student in Application Development. Hoewel technologie niet mijn grootste interesse is, ben ik wel nieuwsgierig en sta ik open om nieuwe dingen te leren. Ik verken graag verschillende ideeën en werk graag op een creatieve manier.
+    
+    <div class="card" style="text-align: center; padding: 3rem 2rem; margin-bottom: 2rem;">
+        <h1 style="margin-bottom: 1rem;">Hallo en welkom bij mijn portfolio</h1>
+        <p style="max-width: 750px; margin: 0 auto 1.5rem auto; font-size: 1.05rem;">
+            Mijn naam is Wout Verheyen en ik ben student Electronics-ICT. Hoewel technologie niet mijn grootste interesse is, ben ik wel nieuwsgierig en sta ik open om nieuwe dingen te leren. Ik verken graag verschillende ideeën en werk graag op een creatieve manier.
         </p>
-        <p>
-            In mijn vrije tijd houd ik van gamen, kunst en muziek. Deze interesses inspireren mijn creativiteit en manier van denken. Ik wil mezelf blijven ontwikkelen en ontdekken waar mijn interesses en talenten liggen.
+        <p style="max-width: 750px; margin: 0 auto 2rem auto; font-size: 1.05rem;">
+            In mijn vrije tijd houd ik van gamen, kunst en muziek. Deze interesses inspireren mijn creativiteit en manier van denken.
         </p>
-
-        <div class="accent"></div>
+        <div>
+            <a href="contact.html" class="submit-button" style="display: inline-block; padding: 0.75rem 2rem; text-decoration: none; font-size: 1.05rem;">
+                <i class="bi bi-envelope-paper" style="margin-right: 0.4rem;"></i>Neem Contact Op
+            </a>
+        </div>
+        <div class="accent" style="margin-top: 2rem;"></div>
     </div>
 
-    <!-- Intro details box -->
-    <div class="intro-box intro-details">
-        <p>Deze portfolio biedt een overzicht van mijn werk, vaardigheden en professionele ontwikkeling.</p>
+    
+    <div class="row g-4 mb-4" style="margin-bottom: 2rem;">
         
-        <ul class="intro-list">
-            <li><strong>About Me:</strong> Hier vindt u uitgebreide informatie over mijn opleiding, competenties en interesses.</li>
-            <li><strong>Projecten:</strong> Een selectie van mijn projecten, inclusief de achterliggende ideeën, methodes en resultaten.</li>
-            <li><strong>CV:</strong> Een duidelijk overzicht van mijn opleiding, vaardigheden en ervaring.</li>
+        <div class="col-12 col-md-4">
+            <div class="card" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
+                <div>
+                    <a href="about.html" style="display: block; overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                        <img src="img/me.jpeg" alt="Over mij" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;">
+                    </a>
+                    <h3><i class="bi bi-person-badge" style="margin-right: 0.4rem;"></i>Over Mij</h3>
+                    <p>Ontdek wie ik ben, mijn achtergrond in Turnhout, mijn keuze voor ICT en mijn passie voor kunst, muziek en gamen.</p>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="about.html" class="project-link" style="font-weight: bold;"><i class="bi bi-arrow-right" style="margin-right: 0.3rem;"></i>Meer over mij</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-md-4">
+            <div class="card" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
+                <div>
+                    <a href="projects.html" style="display: block; overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                        <img src="img/Schermafbeelding 2026-04-27 110425.png" alt="Projecten" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;">
+                    </a>
+                    <h3><i class="bi bi-code-square" style="margin-right: 0.4rem;"></i>Projecten</h3>
+                    <p>Bekijk een selectie van mijn gerealiseerde projecten, zoals clubwebsites, databases, webapplicaties en prototypes.</p>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="projects.html" class="project-link" style="font-weight: bold;"><i class="bi bi-arrow-right" style="margin-right: 0.3rem;"></i>Bekijk projecten</a>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="col-12 col-md-4">
+            <div class="card" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
+                <div>
+                    <a href="cv.html" style="display: block; overflow: hidden; border-radius: 8px; margin-bottom: 1rem; background: rgba(0, 229, 255, 0.05); text-align: center; padding: 2.2rem 0;">
+                        <i class="bi bi-file-earmark-text text-info" style="font-size: 3rem;"></i>
+                    </a>
+                    <h3><i class="bi bi-file-earmark-person" style="margin-right: 0.4rem;"></i>Mijn CV</h3>
+                    <p>Een helder overzicht van mijn opleidingen aan Thomas More Geel, technische vaardigheden en professionele ambities.</p>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="cv.html" class="project-link" style="font-weight: bold;"><i class="bi bi-arrow-right" style="margin-right: 0.3rem;"></i>Bekijk CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="intro-box intro-details card" style="padding: 2rem;">
+        <p><i class="bi bi-info-circle" style="margin-right: 0.4rem;"></i>Deze portfolio biedt een overzicht van mijn werk, vaardigheden en professionele ontwikkeling.</p>
+        
+        <ul class="intro-list" style="margin-top: 1rem;">
+            <li><strong><i class="bi bi-person me-1"></i>About Me:</strong> Hier vindt u uitgebreide informatie over mijn opleiding, competenties en interesses.</li>
+            <li><strong><i class="bi bi-code-slash me-1"></i>Projecten:</strong> Een selectie van mijn projecten, inclusief de achterliggende ideeën, methodes en resultaten.</li>
+            <li><strong><i class="bi bi-file-earmark-text me-1"></i>CV:</strong> Een duidelijk overzicht van mijn opleiding, vaardigheden en ervaring.</li>
         </ul>
 
-        <p>Deze site geeft een helder beeld van mijn leerproces, creatieve aanpak en de manier waarop ik mijn interesses in gamen, kunst en muziek combineer met mijn professionele ontwikkeling.</p>
+        <p style="margin-top: 1rem;">Deze site geeft een helder beeld van mijn leerproces, creatieve aanpak en de manier waarop ik mijn interesses in gamen, kunst en muziek combineer met mijn professionele ontwikkeling.</p>
     </div>
 </main>
 
-<!-- Site footer -->
+
 <footer class="site-footer" role="contentinfo">
     <div class="container">
-       
         <div class="contacts">
-            <a href="https://github.com/woutverheyen" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/wout-verheyen-525223332/?skipRedirect=true" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="tel:+32468341128">+32 468 34 11 28</a>
-            <a href="mailto:wout.verheyen@telenet.be">wout.verheyen@telenet.be</a>
+            <a href="https://github.com/woutverheyen" target="_blank" rel="noopener"><i class="bi bi-github" style="margin-right: 0.3rem;"></i>GitHub</a>
+            <a href="https://www.linkedin.com/in/wout-verheyen-525223332/?skipRedirect=true" target="_blank" rel="noopener"><i class="bi bi-linkedin" style="margin-right: 0.3rem;"></i>LinkedIn</a>
+            <a href="tel:+32468341128"><i class="bi bi-telephone" style="margin-right: 0.3rem;"></i>+32 468 34 11 28</a>
+            <a href="mailto:wout.verheyen@telenet.be"><i class="bi bi-envelope" style="margin-right: 0.3rem;"></i>wout.verheyen@telenet.be</a>
+        </div>
+        <div class="footer-copyright" style="text-align: center; font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem;">
+            &copy; 2026 Wout Verheyen. Alle rechten voorbehouden.
         </div>
         <div class="footer-right"></div>
     </div>
 </footer>
-
-<script src="js/main.js"></script>
 
 </body>
 </html>
